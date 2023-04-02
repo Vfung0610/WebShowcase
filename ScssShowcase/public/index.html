@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>INM320SBB Assignment 6</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+
+    <!-- JS only-->
+    <script src="./assets/js/main.js"></script>
+  </head>
+  <body class="container-fluid">
+    <!--Whole Body-->
+    <div class="row vh-100">
+      <!--NavBar-->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar bg-dark px-0 sidebar-sticky fixed-top sticky-md-top collapse">
+        <div class="pt-3">
+          <!--Logo-->
+          <div class="d-flex justify-content-center align-items-center m-2 mt-5">
+            <img class="headerIcon me-2" src="./assets/images/icons8-d-64.png" alt="A Logo of the Company" />
+            <h1 class="text-light fs-5 m-0">Dashboard Kit</h1>
+          </div>
+          <!--Main Nav-->
+          <div class="pt-3">
+            <ul class="nav flex-column px-4 opacity-75 list-group">
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center list-group-item active"><img class="navIcon" src="./assets/images/pie-chart.png" alt="A Pie Chart Icon" /><a class="nav-link text-light" href="#">Overview</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/tickets.png" alt="A Ticket Icon" /><a class="nav-link text-light" href="#">Tickets</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/idea.png" alt="A Light Blub Icon" /><a class="nav-link text-light" href="#">Ideas</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/multiple-users-silhouette.png" alt="A Icon of A Group Of People" /><a class="nav-link text-light" href="#">Contacts</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/user.png" alt="A Icon of a Person" /><a class="nav-link text-light" href="#">Agents</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/letter.png" alt="A Icon of an Article" /><a class="nav-link text-light" href="#">Articles</a></li>
+            </ul>
+            <ul class="nav flex-column border-top p-4 mt-3 opacity-75">
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/settings.png" alt="A Icon of Setting" /><a class="nav-link text-light" href="#">Settings</a></li>
+              <li class="nav-item my-2 d-flex justify-content-start align-items-center"><img class="navIcon" src="./assets/images/medal.png" alt="A Icon of Medal" /><a class="nav-link text-light" href="#">Subscription</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Main Body-->
+      <main class="col ms-sm-auto px-5 bg-light">
+        <!--Button Triggering NavBar-->
+        <button class="navbar-toggler position-absolute d-md-none fixed-top headerIcon mt-3 ms-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation"><img class="headerIcon" src="./assets/images/menu.png" /></button>
+        <!--Header-->
+        <header class="row d-flex align-items-center mt-5">
+          <h1 class="col-6 col-md-5 fs-3 px-0 weightedText">Overview</h1>
+          <div class="col-6 col-md-7 d-flex align-items-center justify-content-end p-0 m-0">
+            <div class="border-end m-0 p-0 pe-3">
+              <button><img class="icon opacity-50" src="./assets/images/search-interface-symbol.png" alt="A Search Icon" /></button>
+              <button><img class="icon opacity-50" src="./assets/images/bell.png" alt="A Notification Icon" /></button>
+            </div>
+            <div class="d-flex align-items-center justify-content-between ms-3">
+              <h1 class="fs-6 mb-0 me-2">Jone Ferdinand</h1>
+              <img id="avatarIcon" src="./assets/images/avatar.png" alt="A Icon of Jone Ferdinand" />
+            </div>
+          </div>
+        </header>
+        <!--Data Abstract-->
+        <section class="row mb-4 mt-5">
+          <div class="col border rounded me-5 text-center p-3 bg-white">
+            <h1 class="fs-6 text-muted">Unresolved</h1>
+            <p class="fs-4 mb-0">60</p>
+          </div>
+          <div class="col border border-info rounded me-5 text-center p-3 bg-white text-primary">
+            <h1 class="fs-6">Overdue</h1>
+            <p class="fs-4 mb-0">16</p>
+          </div>
+          <div class="col border rounded me-5 text-center p-3 bg-white">
+            <h1 class="fs-6 text-muted">Open</h1>
+            <p class="fs-4 mb-0">43</p>
+          </div>
+          <div class="col border rounded text-center p-3 bg-white">
+            <h1 class="fs-6 text-muted">On hold</h1>
+            <p class="fs-4 mb-0">64</p>
+          </div>
+        </section>
+        <!--Graph & Data Anaylsis-->
+        <section class="row border rounded my-3 bg-white">
+          <!--Graph-->
+          <article class="col-8 border-end p-3 d-flex flex-column">
+            <h1 class="fs-4 weightedText">Today's Trends</h1>
+            <div class="flex-grow-1 d-flex justify-content-around align-items-center"><img class="w-75" src="./assets/images/trendGraph.png" alt="A Trends Graph About Acceptable Scores" /></div>
+          </article>
+          <!--Data Anaylsiss-->
+          <article class="col-4 p-0">
+            <ul class="list-unstyled m-0">
+              <li class="border-bottom text-center p-2 p-lg-3 p-xxl-5">
+                <h1 class="fs-6 text-muted">Resolved</h1>
+                <p class="mb-0">449</p>
+              </li>
+              <li class="border-bottom text-center p-2 p-lg-3 p-xxl-5">
+                <h1 class="fs-6 text-muted">Received</h1>
+                <p class="mb-0">426</p>
+              </li>
+              <li class="border-bottom text-center p-2 p-lg-3 p-xxl-5">
+                <h1 class="fs-6 text-muted">Average first response time</h1>
+                <p class="mb-0">33m</p>
+              </li>
+              <li class="border-bottom text-center p-2 p-lg-3 p-xxl-5">
+                <h1 class="fs-6 text-muted">Average response time</h1>
+                <p class="mb-0">3h 8m</p>
+              </li>
+              <li class="text-center p-2 p-lg-3 p-xxl-5">
+                <h1 class="fs-6 text-muted">Resolution within SLA</h1>
+                <p class="mb-0">94%</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <!--Others Function-->
+        <section class="row mb-5">
+          <!--Modal-->
+          <article class="col border rounded me-5 bg-white d-flex align-items-center flex-column justify-content-center text-center">
+            <!--Message & Button to open modal-->
+            <h1 class="fs-5">Click the following button for a Message</h1>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helloWorld">Click For Message</button>
+            <!--Modal-->
+            <div class="modal fade text-start" id="helloWorld" tabindex="-1" aria-labelledby="helloWorldLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="helloWorldLabel">Hello World</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">This is a message to say hi to the world!</div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--Form-->
+          <article class="col border rounded bg-white p-5">
+            <form>
+              <div class="mb-3">
+                <label for="nickName" class="form-label">Your Nickname:</label>
+                <input type="text" class="form-control" id="nickName" />
+              </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Your Age:</label>
+                <input type="number" min="1" class="form-control" id="age" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkForAcknowledgement" />
+                <label class="form-check-label" for="checkForAcknowledgement">I understand my info would not be disclosed</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

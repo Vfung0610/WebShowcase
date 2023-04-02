@@ -1,0 +1,15 @@
+{
+  "name": "torture_6",
+  "version": "1.0.0",
+  "description": "INM220SBB_WaiHimFung_Torture6",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "WaiHimFung",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

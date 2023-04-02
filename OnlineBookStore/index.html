@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>INM220SBB_WaiHimFung_Torture#6</title>
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600&display=swap" rel="stylesheet" />
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--JS-->
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <!--Menu Bar-->
+      <div id="meunBarLogo"><img src="./img/menu.png" alt="MeunBar Logo" /></div>
+      <!--Company Logo-->
+      <div id="companyLogo"><img src="./img/logo.png" alt="Company Logo" /></div>
+      <!--Nav Bar-->
+      <nav>
+        <ul>
+          <li id="navHome">Home</li>
+          <li id="navAllBooks">All Books</li>
+          <li id="navWhyUs">Why Us</li>
+          <li id="navBookRecommendation">Book Recommendation</li>
+          <li id="navFeaturedBooks">Featured Books</li>
+          <li id="navRecentEvent">Recent Event</li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-->
+    <main>
+      <!--Hero Image-->
+      <section id="hero">
+        <div class="borderLineContainerHorizontal"></div>
+        <div class="heroImageContainer"><img class="heroImage" src="./img/Hero.jpeg" alt="Hero Image" /></div>
+      </section>
+      <!--Main Content-->
+      <section id="mainContent">
+        <div class="borderLineContainerHorizontal"></div>
+        <h1>All Books</h1>
+        <ul>
+          <li class="book">
+            <img src="./img/book1.jpg" alt="A Book" />
+            <h2>I love You to the Moon and Back</h2>
+          </li>
+          <li class="book">
+            <img src="./img/book2.jpg" alt="A Book" />
+            <h2>The Little Blue Box of Bright</h2>
+          </li>
+          <li class="book">
+            <img src="./img/book3.jpg" alt="A Book" />
+            <h2>The Mountain Is You</h2>
+          </li>
+          <li class="book">
+            <img src="./img/book4.jpg" alt="A Book" />
+            <h2>Dr. Seuss Beginner Book Collection</h2>
+          </li>
+          <li class="book">
+            <img src="./img/book5.jpg" alt="A Book" />
+            <h2>Terms And Conditions</h2>
+          </li>
+          <li class="book">
+            <img src="./img/book6.jpg" alt="A Book" />
+            <h2>From Crook to Cook</h2>
+          </li>
+        </ul>
+      </section>
+      <!--SideBar Why Us-->
+      <section id="sideBar">
+        <div class="borderLineContainerHorizontal"></div>
+        <div class="sideBarContent">
+          <h3>Why Us?</h3>
+          <ul>
+            <li>Sufficient Collection of Books</li>
+            <li>Tailor Made Recommendation</li>
+            <li>Good Customer Service</li>
+            <li>Fastest Delivery</li>
+            <li>Cheapest Price</li>
+            <li>Different Event</li>
+          </ul>
+        </div>
+      </section>
+      <!--Extra Content Book Recommendation-->
+      <section id="extraContent">
+        <div class="borderLineContainerHorizontal"></div>
+        <h1>Book Recomment For You</h1>
+        <ul>
+          <li class="book"><img src="./img/book7.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book8.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book9.jpg" alt="A Book" /></li>
+        </ul>
+      </section>
+      <!--Related Images Featured Books-->
+      <section id="relatedImages">
+        <div class="borderLineContainerHorizontal"></div>
+        <h1>Featured Books</h1>
+        <ul>
+          <li class="book"><img src="./img/book10.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book11.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book12.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book13.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book14.jpg" alt="A Book" /></li>
+          <li class="book"><img src="./img/book15.jpg" alt="A Book" /></li>
+        </ul>
+      </section>
+      <!--Related Posts Recent Event-->
+      <section id="relatedPosts">
+        <div class="borderLineContainerHorizontal"></div>
+        <h1>Recent Event</h1>
+        <ul>
+          <li><a href="#">Reading Together</a></li>
+          <li><a href="#">Books Donation</a></li>
+          <li><a href="#">Books Exchange</a></li>
+        </ul>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="footerInfo">
+        <!--Company Information-->
+        <section class="companyInfo">
+          <h3>The Online Bookstore</h3>
+          <h4>theonlinebookstore@gmail.com</h4>
+        </section>
+        <!--Contact Form For User-->
+        <section class="contactFormBlock">
+          <form action="/">
+            <fieldset>
+              <legend>Contact Info</legend>
+              <p class="requireMsg">* field is required</p>
+              <!--Name-->
+              <div class="formElement">
+                <label for="name">Your Name:<span>*</span></label>
+                <input type="text" name="name" required />
+                <p class="requireMsg popUpMsg">*this field is required</p>
+              </div>
+              <!--Email-->
+              <div class="formElement">
+                <label for="email">Your Email:<span>*</span></label>
+                <input type="text" name="email" required />
+                <p class="requireMsg popUpMsg">*this field is required</p>
+              </div>
+              <!--User Msg-->
+              <div class="formElement formTextMsg">
+                <label for="message">Your Message:</label>
+                <textarea name="message"></textarea>
+              </div>
+              <!--Submit Button-->
+              <input id="submitBtn" type="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <!--Button to Scroll To Top-->
+      <button id="scrollToTopButton"><img src="./img/up-arrow.png" alt="A Up Arrow" /></button>
+      <p class="copyRight">2022 &copy; The Online Bookstore Limited</p>
+    </footer>
+  </body>
+</html>

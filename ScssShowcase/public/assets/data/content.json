@@ -1,0 +1,10 @@
+{
+  "version": "2.5",
+  "encoding": "utf-8",
+  "users": [
+    { "id": 0, "name": "John", "age": 27 },
+    { "id": 1, "name": "May", "age": 29 },
+    { "id": 2, "name": "Vincent", "age": 35 },
+    { "id": 3, "name": "Matthew", "age": 19 }
+  ]
+}

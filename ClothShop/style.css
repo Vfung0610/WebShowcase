@@ -1,0 +1,264 @@
+/*Element Selector*/
+/*Universal*/
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
+  color: rgb(45, 45, 88);
+}
+
+/*Header*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+/*Nav Bar or Menu*/
+nav {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 15px;
+}
+
+nav ul {
+  height: 100vh;
+  width: 70vw;
+
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 93px;
+  text-align: right;
+
+  color: rgb(45, 45, 88);
+  line-height: 50px;
+  font-size: 2em;
+
+  background-color: rgba(255, 255, 255, 0.959);
+  font-family: "Indie Flower", cursive;
+}
+
+nav ul li {
+  margin: 15px;
+}
+
+/*Main Section Trousers and T-Shirt*/
+main section {
+  margin: 40px;
+}
+
+/*Item Heading*/
+main section h1 {
+  margin-bottom: 10px;
+
+  font-size: 1.5em;
+  color: rgb(36, 102, 81);
+}
+
+/*Item container*/
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+
+  text-align: left;
+  font-size: 1.1em;
+}
+
+main section ul li:not(:first-child) {
+  width: 45%;
+}
+
+/*Footer Contact Info*/
+footer {
+  margin-bottom: 15px;
+
+  border-top: dashed 1px grey;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  font-family: "Indie Flower", cursive;
+  font-size: 1.1em;
+  color: rgb(45, 45, 88);
+}
+
+/*Form*/
+form legend {
+  padding: 0 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 120px;
+}
+
+form fieldset:first-child {
+  border: solid;
+  padding: 15px;
+}
+
+span {
+  color: red;
+}
+
+textarea {
+  width: 75%;
+}
+
+/*Class Selector*/
+/*Nav Bar*/
+.logoContainer {
+  flex: 1;
+  text-align: center;
+}
+
+.logoContainer img {
+  height: 70px;
+}
+
+/*Footer Contact Info*/
+.companyInfo {
+  margin: 25px 0;
+}
+
+/*Form*/
+.contactFormBlock {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.requireMsg {
+  color: red;
+}
+
+.popUpMsg {
+  visibility: hidden;
+}
+
+.formElement {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 15px 0;
+}
+
+.formTextMsg {
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+/*CopyRight Msg*/
+.copyRight {
+  font-size: 0.9em;
+}
+
+/*ID Selector*/
+/*Nav Bar*/
+#menuLogo img {
+  height: 30px;
+}
+
+/*Footer Contact Info*/
+/*Form*/
+#submitBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: rgb(190, 202, 255);
+}
+
+#scrollToTopButton {
+  background-color: rgb(202, 208, 235);
+  /*border: 1px solid grey;*/
+  border: none;
+  border-radius: 5px;
+
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 13px;
+}
+
+#scrollToTopButton img {
+  width: 20px;
+}
+
+/*Desktop View*/
+@media screen and (min-width: 650px) {
+  /*Element Selector*/
+  /*Nav Bar*/
+  nav ul {
+    display: flex;
+
+    position: static;
+    height: auto;
+    width: auto;
+
+    font-size: 1.5em;
+  }
+
+  /*Main Section Trousers and T-Shirt*/
+  main section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Item Container*/
+  main section ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  main section ul li:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  main section ul li:not(:first-child) {
+    width: 100%;
+  }
+
+  /*Class Selector*/
+  /*Logo*/
+  .logoContainer {
+    flex: 0 auto;
+  }
+
+  /*Hero Image*/
+  .heroImgContainer {
+    width: 75%;
+    margin: auto;
+  }
+
+  /*Form*/
+  .formElement {
+    justify-content: flex-start;
+  }
+
+  .popUpMsg {
+    margin-left: 15px;
+  }
+
+  /*ID Selector*/
+  /*Nav Bar*/
+  #menuLogo {
+    display: none;
+  }
+}
