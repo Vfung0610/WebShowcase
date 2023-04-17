@@ -34,7 +34,7 @@ header {
   top: 0;
   z-index: 99;
 
-  height: 80px;
+  min-height: 80px;
 
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ header {
 
 /*NavBar*/
 nav ul {
-  height: 100vh;
+  /* height: 100vh; */
   width: 70vw;
 
   display: none;
@@ -347,6 +347,7 @@ textarea {
   /*Header*/
   nav ul {
     display: flex;
+    flex-wrap: wrap;
 
     position: static;
     height: auto;
